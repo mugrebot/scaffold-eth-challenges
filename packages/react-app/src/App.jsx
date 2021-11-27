@@ -42,25 +42,20 @@ import deployedContracts from "./contracts/hardhat_contracts.json";
 const { ethers } = require("ethers");
 /*
     Welcome to 🏗 scaffold-eth !
-
     Code:
     https://github.com/austintgriffith/scaffold-eth
-
     Support:
     https://t.me/joinchat/KByvmRe5wkR-8F_zz6AjpA
     or DM @austingriffith on twitter or telegram
-
     You should get your own Infura.io ID and put it in `constants.js`
     (this is your connection to the main Ethereum network for ENS etc.)
-
-
     🌏 EXTERNAL CONTRACTS:
     You can also bring in contract artifacts in `constants.js`
     (and then use the `useExternalContractLoader()` hook!)
 */
 
 /// 📡 What chain are your contracts deployed to?
-const targetNetwork = NETWORKS.localhost; // <------- select your target frontend network (localhost, rinkeby, xdai, mainnet)
+const targetNetwork = NETWORKS.rinkeby; // <------- select your target frontend network (localhost, rinkeby, xdai, mainnet)
 
 // 😬 Sorry for all the console logging
 const DEBUG = true;
@@ -620,15 +615,14 @@ function App(props) {
                 </div>
               </Card>
             </div>
-          
-            {/* 
-            
-            Extra UI for buying the tokens back from the user using "approve" and "sellTokens"
+
+
+
+
             <Divider />
             <div style={{ padding: 8, marginTop: 32, width: 300, margin: "auto" }}>
               <Card title="Sell Tokens">
                 <div style={{ padding: 8 }}>{tokensPerEth && tokensPerEth.toNumber()} tokens per ETH</div>
-
                 <div style={{ padding: 8 }}>
                   <Input
                     style={{ textAlign: "center" }}
@@ -641,7 +635,6 @@ function App(props) {
                   <Balance balance={ethCostToPurchaseTokens} dollarMultiplier={price} />
                 </div>
                 {isSellAmountApproved?
-
                   <div style={{ padding: 8 }}>
                     <Button
                       type={"primary"}
@@ -670,13 +663,11 @@ function App(props) {
                     </Button>
                   </div>
                 }
-
-
               </Card>
             </div>
-            
-            
-            */}
+
+
+
 
             <div style={{ padding: 8, marginTop: 32 }}>
               <div>Vendor Token Balance:</div>
@@ -707,13 +698,9 @@ function App(props) {
             </div>
 
             {/*
-
-
-
                 🎛 this scaffolding is full of commonly used components
                 this <Contract/> component will automatically parse your ABI
                 and give you a form to interact with it locally
-
             <Contract
               name="YourContract"
               signer={userSigner}

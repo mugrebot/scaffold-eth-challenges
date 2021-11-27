@@ -13,6 +13,8 @@ packages/react-app/src/contracts/*
 !packages/react-app/src/contracts/external_contracts.js
 packages/hardhat/cache*
 packages/**/data
+packages/hardhat/0xdf8256c71dae2aa5d0fb8eceda68d2f9e1eb3b2e.txt
+packages/hardhat/mnemonic.txt
 !packages/react-app/src/contracts/contracts.js
 
 
